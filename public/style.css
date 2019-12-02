@@ -1,0 +1,22 @@
+.navbar a {
+    color:white !important
+}
+
+.delete {
+    background-color: red;
+    color: black;
+}
+
+.save {
+    background-color: green;
+    color: white;
+}
+
+.card {
+    background-color: burlywood;
+    margin-bottom: 25px;
+}
+
+body {
+    background-color: #e9ecef;
+}

@@ -1,0 +1,69 @@
+
+	<nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #0c90ee;">
+		<a class="navbar-brand" href="/">Mongo News Scraper</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+			<a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+			<a class="nav-item nav-link saved-articles" href="/SavedArticles">Saved Articles</a>
+			<a class="nav-item nav-link" href="/scrape">Scrape New Articles</a>
+			<a class="nav-item nav-link" href="">Clear Articles</a>
+			</div>
+		</div>
+	</nav>
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h1 class="display-4"> Saved Mongo News</h1>
+		<div id="SavedArticles"></div>
+      <div id="notes"></div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Notes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form action="">
+                <input type="hidden" id="hiddenInput" value="">
+                      <input id='titleinput' name='title' placeholder="Title Here" style="width: 250px; margin-bottom:20px;">;
+                      <textarea id='bodyinput' name='body' placeholder="Text Here" style="width: 250px;"></textarea>;
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary note-submit" data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalTwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Notes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title notes-title"></h5>
+                <p class="card-text notes-text"></p>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary note-submit" data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
