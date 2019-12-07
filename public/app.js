@@ -93,7 +93,6 @@ $(document).on("click", ".save", function() {
 $(document).on("click", ".view-note", function() {
   
   var thisId = $(this).attr("data-id");
-  console.log("i want this id" +thisId);
   $.ajax({
     method: "GET",
     url: "/article/" + thisId
